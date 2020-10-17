@@ -12,6 +12,7 @@ class nyt_solver():
 
 
 app = Flask(__name__)
+
 @app.route("/<letters>")
 def solution(letters):
     solver = nyt_solver(essential=letters[0].lower(), all={x.lower() for x in letters})
