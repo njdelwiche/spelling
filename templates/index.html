@@ -6,6 +6,12 @@
   </head>
   <body>
     <div class="container">
+      {% if message %}
+      <div class="alert alert-danger" role="alert">
+        Usage example: <a href='https://nytspellingsolver.herokuapp.com/hmaint'>https://nytspellingsolver.herokuapp.com/hmaint</a>
+        <p>H: required letter</p>
+      </div>
+      {% endif %}
       <div class="row justify-content-center">
         <div class="col-4">
         <ul class="list-group">
