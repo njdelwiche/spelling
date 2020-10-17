@@ -1,2 +1,4 @@
 # spelling
-solving nyt spelling bee
+solves nyt spelling bee
+
+https://nytspellingsolver.herokuapp.com/
