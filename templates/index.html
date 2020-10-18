@@ -3,6 +3,15 @@
   <head>
     <title>Nyt Spelling Solver</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180766844-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-180766844-1');
+  </script>
   </head>
   <body>
     <div class="container">
@@ -14,12 +23,12 @@
       {% endif %}
       <div class="row justify-content-center">
         <div class="col-4">
-        <ul class="list-group">
-          {% for word in solved %}
-          <li class="list-group-item" style="text-align: center">{{word}}</li>
-          {% endfor %}
-      </ul>
-      </div>
+          <ul class="list-group">
+              {% for word in solved %}
+              <li class="list-group-item" style="text-align: center">{{word}}</li>
+              {% endfor %}
+          </ul>
+        </div>
       </div>
     </div>
   </body>
